@@ -7,6 +7,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.appcompat.widget.Toolbar
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,9 +52,9 @@ class MainActivity : AppCompatActivity() {
                 precipProbTextView.text = "Precipitation Probability: ${today.precipprob}%"
 
                 // Set the weather image based on conditions
-                when (today.conditions.toLowerCase()) {
+                when (today.conditions.lowercase(Locale.getDefault())) {
                     "clear", "sunny" -> weatherImageView.setImageResource(R.drawable.sun)
-                    "cloudy" -> weatherImageView.setImageResource(R.drawable.clouds)
+                    "Partially cloudy" -> weatherImageView.setImageResource(R.drawable.clouds)
                     "rain", "rainy" -> weatherImageView.setImageResource(R.drawable.rainy)
                     else -> weatherImageView.setImageResource(R.drawable.weather)
                 }
