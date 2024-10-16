@@ -1,6 +1,5 @@
 package com.example.tanveermidterm
 
-import WeatherService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

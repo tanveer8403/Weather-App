@@ -1,7 +1,5 @@
 package com.example.tanveermidterm
 
-import WeatherData
-import WeatherService
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

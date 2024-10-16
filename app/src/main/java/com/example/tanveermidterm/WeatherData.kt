@@ -1,3 +1,5 @@
+package com.example.tanveermidterm
+
 data class WeatherData(
     val resolvedAddress: String,
     val currentConditions: CurrentConditions,
